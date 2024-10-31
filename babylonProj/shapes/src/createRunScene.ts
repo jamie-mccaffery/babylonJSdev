@@ -1,16 +1,10 @@
-import { SceneData } from "./interfaces";
+import {  } from "@babylonjs/core";
 
-import { createxSlide, createySlide, createxRotate, createyRotate, createV3scaling,  createColorShift, frameRate } from "./animations";
+import { SceneData } from "./interfaces";
 
 
 export default function createRunScene(runScene: SceneData) {
-  runScene.sphere.position.y = -2;    
-
-  runScene.box.animations.push(createxSlide(frameRate));
-  runScene.box.animations.push(createySlide(frameRate));
-  runScene.box.animations.push(createxRotate(frameRate));
-  runScene.box.animations.push(createyRotate(frameRate));
-  runScene.box.animations.push(createV3scaling(frameRate));
-  runScene.box.animations.push(createColorShift(frameRate));
-  runScene.scene.beginAnimation(runScene.box, 0, 2 * frameRate, true);
-}                                   
+  runScene.scene.onAfterRenderObservable.add(() => {
+  // No action, this is a static scene
+  });
+}
