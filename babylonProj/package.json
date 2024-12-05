@@ -14,7 +14,9 @@
     "villagebuild": "vite build village",
     "villagepreview": "preview village --host",
     "multibuild": "vite build multi",
-    "multipreview": "vite preview multi --host"
+    "multipreview": "vite preview multi --host",
+    "shapesbuild": "vite build shapes",
+    "shapespreview": "vite preview shapes --host"
   },
   "devDependencies": {
     "typescript": "~5.6.2",
