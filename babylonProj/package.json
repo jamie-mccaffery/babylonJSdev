@@ -1,0 +1,32 @@
+{
+  "name": "testproj",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host",
+    "collision03build": "vite build collision03",
+    "collision03preview": "vite preview collision03 --host",
+    "lighting02build": "vite build lighting02",
+    "lighting02preview": "preview lighting02 --host",
+    "villagebuild": "vite build village",
+    "villagepreview": "preview village --host",
+    "multibuild": "vite build multi",
+    "multipreview": "vite preview multi --host",
+    "shapesbuild": "vite build shapes",
+    "shapespreview": "vite preview shapes --host",
+    "element5build": "vite build element5",
+    "element5preview": "vite preview element5 --host"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^5.4.9",
+    "vite-plugin-chunk-split": "^0.5.0"
+  }
+
+  
+
+}
+
